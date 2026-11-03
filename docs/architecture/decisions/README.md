@@ -1,28 +1,44 @@
 # Architecture Decision Records
 
-Architecture Decision Records (ADRs) capture significant technical decisions and the reasoning behind them.
+Architecture Decision Records (ADRs) document significant technical decisions that shape CXXForge.
 
 ## When to write an ADR
 
-Write an ADR when a decision materially affects system boundaries, public specifications, compatibility, security, data formats, build semantics, or long-term maintenance.
+Create an ADR when a decision:
 
-Routine implementation choices do not need an ADR.
+- Establishes or changes a major architectural boundary.
+- Selects a foundational technology or protocol.
+- Constrains future compatibility, extensibility, security, or deployment.
+- Resolves a significant trade-off between competing architectural approaches.
 
-## Lifecycle
-
-1. Identify the problem and relevant constraints.
-2. Discuss alternatives, preferably through an RFC when the decision is substantial or cross-cutting.
-3. Write an ADR with context, decision, alternatives, and consequences.
-4. Mark it **Proposed** while under review.
-5. Mark it **Accepted**, **Rejected**, or **Superseded** after a decision.
-6. Do not rewrite history when a decision changes; create a new ADR that supersedes the previous one.
+Routine implementation details do not need an ADR.
 
 ## Naming
 
-Use sequential identifiers and short kebab-case titles:
+Use a monotonically increasing four-digit number and a short, descriptive slug:
 
-`ADR-0001-rust-workspace-structure.md`
+`0001-modular-monolith.md`
 
-## Template
+Do not reuse an ADR number, including for rejected or withdrawn decisions.
 
-Start from [template.md](template.md).
+## Required structure
+
+Use the [ADR template](template.md). Include context, decision, alternatives considered, consequences, status, date, and related documents.
+
+## Status
+
+- **Proposed** — under consideration.
+- **Accepted** — approved by the founder.
+- **Rejected** — considered and not selected.
+- **Superseded** — replaced by a later ADR.
+- **Withdrawn** — proposal abandoned before acceptance.
+
+An accepted ADR is immutable in its decision history. If the decision changes, create a new ADR and mark the earlier one superseded.
+
+## Approval and publication
+
+The founder is the final approval authority. ADR changes are published through pull requests under the [documentation governance policy](../../development/documentation-governance.md).
+
+## Records
+
+Add accepted, rejected, withdrawn, and superseded ADRs to this directory. Keep this index updated with links and current status.
