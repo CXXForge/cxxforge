@@ -4,15 +4,17 @@ This directory is the canonical home for accepted architecture specifications an
 
 ## Architecture baseline
 
-The initial system architecture has been explored in the project planning process, but the resulting Architecture Specification v0.1 has not yet been approved or published as an authoritative specification. Its content will be decomposed into focused documents and reviewed individually.
+The [System Architecture Overview](system-overview.md) is the accepted initial architectural baseline (version 0.1). It establishes CXXForge's product boundaries, architectural principles, logical subsystems, and initial strategic direction.
+
+The overview is intentionally high-level. Focused specifications will define package semantics, manifests, lockfiles, build behavior, toolchains, ABI compatibility, artifacts, registries, and security in greater detail.
 
 ## Specification register
 
-The following documents are planned. Their presence in this register does not mean they have been approved.
+The following documents are planned or maintained. Status indicates whether a document is an approved specification.
 
 | Specification | Status | Scope |
 |---|---|---|
-| [System overview](system-overview.md) | Planned | Product boundaries, logical subsystems, principles, and high-level architecture |
+| [System overview](system-overview.md) | Accepted v0.1 | Product boundaries, logical subsystems, principles, and high-level architecture |
 | [Package and dependency model](package-model.md) | Planned | Package identity, versions, dependency sources, resolution, and features |
 | [Manifest specification](manifest-specification.md) | Planned | Manifest syntax and semantics |
 | [Lockfile specification](lockfile-specification.md) | Planned | Resolved dependency graph and reproducibility |
@@ -25,7 +27,7 @@ The following documents are planned. Their presence in this register does not me
 
 ## Architectural decisions
 
-Accepted and superseded architectural decisions are recorded as individual [Architecture Decision Records](decisions/README.md).
+The initial architectural baseline is supported by six accepted [Architecture Decision Records](decisions/README.md). Later changes to accepted decisions must be recorded through new ADRs rather than silently rewriting decision history.
 
 ## Change policy
 
