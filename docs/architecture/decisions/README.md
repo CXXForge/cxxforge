@@ -39,6 +39,15 @@ An accepted ADR is immutable in its decision history. If the decision changes, c
 
 The founder is the final approval authority. ADR changes are published through pull requests under the [documentation governance policy](../../development/documentation-governance.md).
 
-## Records
+## Accepted decisions
 
-Add accepted, rejected, withdrawn, and superseded ADRs to this directory. Keep this index updated with links and current status.
+| ADR | Decision | Status |
+|---|---|---|
+| [ADR-0001](0001-modular-monolith.md) | Modular Monolith | Accepted |
+| [ADR-0002](0002-independent-package-model.md) | Independent Package Model with Adapters | Accepted |
+| [ADR-0003](0003-build-orchestration-ownership.md) | Build Graph and Orchestration Ownership | Accepted |
+| [ADR-0004](0004-local-first-architecture.md) | Local-First Architecture | Accepted |
+| [ADR-0005](0005-cross-platform-strategy.md) | Cross-Platform Architecture with Staged Validation | Accepted |
+| [ADR-0006](0006-primary-development-platform.md) | Linux as the Primary Development and CI Platform | Accepted |
+
+Add accepted, rejected, withdrawn, and superseded architectural decisions to this directory. Keep this index updated with links and current status.
