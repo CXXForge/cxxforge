@@ -21,11 +21,11 @@ Small bug fixes, internal refactors, and routine documentation improvements gene
 2. Create a proposal from [template.md](template.md).
 3. Submit it as a pull request under `rfcs/` with a sequential identifier.
 4. Discuss alternatives, compatibility, security, migration, and implementation impact.
-5. The project lead or delegated maintainers record the outcome: **Draft**, **In Review**, **Accepted**, **Rejected**, or **Withdrawn**.
+5. The founder records the outcome: **Draft**, **In Review**, **Accepted**, **Rejected**, or **Withdrawn**.
 6. If accepted, create or update the relevant specifications and ADRs.
 7. Link implementation work to the accepted RFC.
 
-Acceptance of an RFC approves the direction; it does not mean the implementation is complete.
+Acceptance of an RFC approves the direction; it does not mean the implementation is complete. Maintainers and contributors may review and recommend changes, but final approval authority remains with the founder.
 
 ## Naming
 
